@@ -16,7 +16,7 @@ overlap(slot(Time1,Time2),slot(Time3,Time4), Slot) :- gte(Time1,Time3), lte(Time
 overlap(slot(Time1,Time2),slot(Time3,Time4), Slot) :- gte(Time3,Time1), lte(Time4,Time2), lte(Time3,Time4), Time3 \== Time4, Slot = slot(Time3, Time4).
 overlap(slot(Time1,Time2),slot(Time3,Time4), Slot) :- gte(Time1,Time3), lte(Time2,Time4), lte(Time1,Time2), Time1 \== Time2, Slot = slot(Time1, Time2).
 
-people([ann,bob,carla,dave,ed]).
+people([ann,bob,carla]).
 group2(Person1, Person2, Group) :- Group = [Person1, Person2].
 group3(Person1, Person2, Person3, Group) :- Group = [Person1, Person2, Person3].
 group4(Person1, Person2, Person3, Person4, Group) :- Group = [Person1, Person2, Person3, Person4].
